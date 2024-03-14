@@ -34,7 +34,7 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:calebeds/mb2g-release-plugin.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/calebeds/mb2g-release-plugin.git</developerConnection>
         <url>https://github.com/calebeds/mb2g-release-plugin</url>
     </scm>
 
