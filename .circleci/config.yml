@@ -27,7 +27,7 @@ jobs:
       # then deploy to package cloud
       - run:
           name: Deploy
-          command: mvn deploy -s .circleci/settings.xml
+          command: mvn --batch-mode release:prepare release:perform -s .circleci/settings.xml
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
