@@ -24,6 +24,14 @@ jobs:
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
+      # then set email
+      - run:
+          name: Name
+          command: git config user.email "calebe.dso@gmail.com"
+      # then set name
+      - run:
+          name: Email
+          command: git config user.name "Calebe Dos Santos Oliveira"
       # then deploy to package cloud
       - run:
           name: Deploy
